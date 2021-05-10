@@ -1,0 +1,108 @@
+<form [formGroup]="form" class="mat-elevation-z8">
+<mat-grid-list cols="3" rowHeight="150px">
+  <h2>Claimant Details</h2>
+    <mat-grid-tile>
+
+      <div class="controles-container">
+
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input formControlName="patientName" matInput placeholder=" Patient Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input type="date" formControlName="patientName" matInput placeholder=" Patient DOB">
+        </mat-form-field>
+      </div>
+ </mat-grid-tile>
+
+ <mat-grid-tile>
+   <div class="controles-container">
+     <mat-form-field>
+       <input formControlName="patientName" matInput placeholder=" Patient Address">
+     </mat-form-field>
+
+   </div>
+</mat-grid-tile>
+
+<mat-grid-tile>
+  <div class="controles-container">
+    <mat-form-field>
+      <input formControlName="patientName" matInput placeholder=" Policy Number ">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="date" formControlName="patientName" matInput placeholder=" Coverage from">
+    </mat-form-field>
+  </div>
+</mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="3" rowHeight="150px">
+  <h2>Provider Details</h2>
+    <mat-grid-tile>
+
+      <div class="controles-container">
+
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input formControlName="patientName" matInput placeholder=" Provider Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input  formControlName="patientName" matInput placeholder="Treating Doctor">
+        </mat-form-field>
+      </div>
+ </mat-grid-tile>
+
+ <mat-grid-tile>
+   <div class="controles-container">
+     <mat-form-field>
+       <input formControlName="patientName" matInput placeholder="Provider Address">
+     </mat-form-field>
+   </div>
+</mat-grid-tile>
+
+<mat-grid-tile>
+  <div class="controles-container">
+    <mat-form-field>
+      <input formControlName="patientName" matInput placeholder=" Policy Number ">
+    </mat-form-field>
+
+  </div>
+</mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="3" rowHeight="150px">
+  <h2>Claim Details</h2>
+    <mat-grid-tile>
+
+      <div class="controles-container">
+
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input type="date" formControlName="patientName" matInput placeholder=" Date of Admission">
+        </mat-form-field>
+        <mat-form-field>
+          <input type="date" formControlName="patientName" matInput placeholder="Date of Discharge ">
+        </mat-form-field>
+      </div>
+ </mat-grid-tile>
+
+ <mat-grid-tile>
+   <div class="controles-container">
+     <mat-form-field>
+       <input formControlName="patientName" matInput placeholder="Illness / Diseases">
+     </mat-form-field>
+     <mat-form-field>
+      <input formControlName="patientName" matInput placeholder="Claimed Amount">
+    </mat-form-field>
+
+   </div>
+</mat-grid-tile>
+</mat-grid-list>
+<section>
+
+  <div class="example-button-row">
+    <button type="submit" mat-raised-button class="btn1">Submit</button>
+    <button type="reset" mat-raised-button>Reset</button>
+  </div>
+</section>
+</form>
